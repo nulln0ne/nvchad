@@ -98,6 +98,16 @@ return {
   },
 
   {
+    "folke/flash.nvim",
+    event = "VeryLazy",
+    keys = {
+      { "gw", function() require("flash").jump() end, mode = { "n", "x", "o" }, desc = "Flash jump" },
+      { "gW", function() require("flash").treesitter() end, mode = { "n", "x", "o" }, desc = "Flash treesitter" },
+    },
+    opts = {},
+  },
+
+  {
     "olexsmir/gopher.nvim",
     ft = "go",
     dependencies = { "nvim-lua/plenary.nvim", "nvim-treesitter/nvim-treesitter" },
