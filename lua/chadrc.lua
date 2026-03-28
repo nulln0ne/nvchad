@@ -20,7 +20,10 @@ M.ui = {
     lazyload = false,
   },
   statusline = {
-    theme = "vscode_colored",
+    theme = "vscode",
+  },
+  telescope = {
+    style = "bordered",
   },
 }
 
@@ -31,7 +34,7 @@ M.term = {
     col = 0.1,
     width = 0.8,
     height = 0.8,
-    border = "single",
+    border = "rounded",
   },
 }
 
